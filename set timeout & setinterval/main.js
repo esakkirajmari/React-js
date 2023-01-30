@@ -1,13 +1,16 @@
 // setTimeout
-// setTimeout(function (){
-//     console.log(2);
+setTimeout(function (){
+    console.log("esakki");
 
-// },10000 );
-// console.log(3);
+},10000);
 
 // setInterval
-setInterval(function (){
-    console.log(2);
+const myInterval =setInterval(startTime,5000);
 
-},10000 );
-console.log(3);
+function startTime(){
+    console.log("raj");
+}
+
+function stopInterval(){
+    clearInterval(myInterval)
+}

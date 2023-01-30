@@ -1,5 +1,5 @@
 let student={
-    name:"esakki",
+    name:"esakkiraj",
     age:23,
     mark1:190,
     mark2:100,
@@ -7,5 +7,5 @@ let student={
        let msg2="hi " +this.age;
        console.log(msg2);
     }
- }
+ };
  student.hello()
