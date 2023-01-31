@@ -2,6 +2,10 @@
 // import ReactDOM from 'react-dom/client';
 import React,{createElement} from 'react';
 import ReactDOM from 'react-dom/client';
+import Header from './Header/Header';
+import Banner from './Banner/Banner';
+import Content from './Content/Content';
+import Footer from './Footer/Footer';
 // import './index.css';
 // import App from './App';
 // import reportWebVitals from './reportWebVitals';
@@ -28,28 +32,37 @@ import ReactDOM from 'react-dom/client';
 //   createElement("h3",{},"Esakkiraj")
 // ]);
 
-const name="react";
+// const name="react";
  
-const arr=["hi","hello","welcome"]
-const head=(
-  <div className='sample' style={{color:"blue"}}>
-    <h1>Esakki</h1>
-    <h2>raj</h2>
-    <h3>Esakkiraj</h3>
-    {name}
-    {5+7}
-    {false ? "true":"false"}
-    {arr.map((val, index) => 
-      <div key={index}>
-        <p>{val}</p>
-      </div>
-    )}
-    <button onClick={()=>console.log("click me")}>click</button>
-  </div>
-)
-const root=ReactDOM.createRoot(document.getElementById('root'));
+// const arr=["hi","hello","welcome"]
+// const head=(
+//   <div className='sample' style={{color:"blue"}}>
+//     <h1>Esakki</h1>
+//     <h2>raj</h2>
+//     <h3>Esakkiraj</h3>
+//     {name}
+//     {5+7}
+//     {false ? "true":"false"}
+//     {arr.map((val, index) => 
+//       <div key={index}>
+//         <p>{val}</p>
+//       </div>
+//     )}
+//     <button onClick={()=>console.log("click me")}>click</button>
+//   </div>
+// )
 
-root.render(
-  head
-);
+function Main(){
+  return(
+  <div>
+    <Header />
+    <Banner/>
+    <Content/>
+    <Footer/>
+    Function
+    </div>
+  );
+}
+const root=ReactDOM.createRoot(document.getElementById('root'));
+root.render(<Main/>);
 
