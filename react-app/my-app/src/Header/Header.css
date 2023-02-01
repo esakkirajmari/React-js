@@ -1,4 +1,10 @@
 .header-container{
     background:red; 
     height:54px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header-container img{
+    width: 50px;
 }
