@@ -27,7 +27,7 @@ var obj1={
 };
 var obj2={
     f1:function(a,b,c){
-        console.log(this.num+a+b+c);  // new function create var call 
+        console.log(this.num+a+b+c);  // new function create var call  click pannum poothu than trigger agum
     }
 };
 var res=obj2.f1.bind(obj1,2,"hello","world");
